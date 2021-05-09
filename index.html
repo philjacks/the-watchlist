@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>the<span class="red-text">WATCHLIST</span></h1>
+        <img src="img/cinema.png" alt="" height="100px" width="100px" />
+      </div>
+      <form id="movie-input">
+        <input type="text" id="addMovie" placeholder="Add a movie" />
+        <br />
+        <button id="add_button">Add Movie</button>
+      </form>
+      <input type="text" id="filter" placeholder="Search movies" />
+
+      <label>
+        <input type="checkbox" id="hide-watched" class="red-back" /> Hide
+        watched
+      </label>
+
+      <select id="sort-by">
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabetically">Sort alphabetically</option>
+        <option value="byWatched">Sort by watched</option>
+      </select>
+      <div id="movie-count"></div>
+      <div id="movie-list"></div>
+    </div>
+    <br /><br />
+    <footer>
+      <span>&copy; Created by <a href="#">Phil Jacks</a></span>
+    </footer>
+
+    <script src="js/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
